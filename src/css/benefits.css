@@ -1,0 +1,147 @@
+.benefits-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .benefits-section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1440px) {
+  .contain {
+    flex-direction: row;
+  }
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-benefits {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .list-benefits {
+    display: flex;
+  }
+}
+
+.benefit-item {
+  background-color: #242527;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefit-item {
+    width: calc((100% - 16px) / 2);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .benefits-title {
+    margin-right: 400px;
+    white-space: nowrap;
+  }
+}
+
+.icon-benefits {
+  stroke: #fafafa;
+  fill: none;
+  width: 24px;
+  height: 24px;
+  margin: 12px;
+}
+
+.benefit-icons {
+  background-color: #ed3b44;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 64px;
+  border-radius: 10px;
+}
+
+.benefits-subtitle {
+  color: rgb(250, 250, 250);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.benefits-txt {
+  color: rgba(250, 250, 250, 0.6);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-txt {
+    width: 296px;
+  }
+}
+
+.order-button {
+  width: 187px;
+  padding: 14px 32px;
+  color: #fafafa;
+  font-size: 16px;
+  white-space: nowrap;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  letter-spacing: 0.02em;
+  transition: border 250ms linear;
+}
+
+.order-button:hover {
+  border: 1px solid rgb(250, 250, 250);
+}
+
+@media screen and (min-width: 768px) {
+  .order-button {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contain {
+    display: flex;
+  }
+}

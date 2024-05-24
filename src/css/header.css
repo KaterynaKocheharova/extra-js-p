@@ -1,0 +1,18 @@
+.nav-container {
+  justify-content: space-between;
+}
+
+.nav-logo {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.nav-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+  }
+}

@@ -21,8 +21,8 @@
   --input-border-radius: 30px;
 
   /* ICON SIZES */
-  --big-icon-size: 2rem;
   --standard-icon-size: 1.5rem;
+  --big-icon-size: 2rem;
   --section-padding: 5rem;
 
   /* FONT-SIZES */
@@ -40,6 +40,7 @@ body {
   letter-spacing: 0.07em;
   /* font-size: calc(0.7rem + 0.3vw); */
   font-size: 14px;
+  color: var(--primary-font-color);
 }
 
 .container {

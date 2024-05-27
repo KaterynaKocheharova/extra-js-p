@@ -1,6 +1,4 @@
 .header {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   background-color: var(--primary-color);
 }
 
@@ -20,7 +18,23 @@
 @media screen and (min-width: 768px) {
   .nav-list {
     display: flex;
+    /* column-gap: var(--standard-distance); */
+    font-size: var(--standard-font-size);
   }
+}
+
+.nav-link {
+  display: block;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  transition: color 250ms linear, transform 250ms linear;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+  transform: scale(1.05);
 }
 
 .fa-bag-shopping {

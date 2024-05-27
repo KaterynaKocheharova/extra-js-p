@@ -15,6 +15,7 @@
   --primary-border-color: #8c8c8c;
   --primary-font-color: #beb9b9;
   --card-box-shadow: -5px 5px 18px 0 rgba(0, 0, 0, 0.07);
+  --accent-color: #ffffff;
 
   /* BORDER RADIUS */
   --card-border-radius: 5px;
@@ -27,11 +28,14 @@
 
   /* FONT-SIZES */
 
+  --standard-font-size: 16px;
+
   /* PADDINGS */
 
   --section-padding: 3rem;
 
-  /* GAPS */
+  /* DISTANCES */
+  --standard-distance: 2rem;
 }
 
 body {

@@ -4,6 +4,7 @@
 
 .nav-container {
   justify-content: space-between;
+  position: relative; /* Make sure the container is a positioning context */
 }
 
 .nav-logo {
@@ -23,45 +24,31 @@
 
 .nav-link,
 .shop-link {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  row-gap: 0.5rem;
+  position: relative;
+  display: block;
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-right: 1rem;
   padding-left: 1rem;
   transition: color 250ms linear, transform 250ms linear;
-}
-
-.nav-link.active-nav-link::after {
-  display: inline-block;
-  content: '';
-  width: 50%;
-  height: 1px;
-  border-radius: 5px;
-  /* width: 5px;
-  height: 5px; */
-  /* border-radius: 50%; */
-  background-color: var(--primary-font-color);
-}
-
-.nav-link:hover::after {
-  display: inline-block;
-  content: '';
-  width: 50%;
-  height: 1px;
-  border-radius: 5px;
-  /* width: 5px;
-  height: 5px; */
-  /* border-radius: 50%; */
-  background-color: var(--primary-font-color);
+  position: relative; /* Make sure the link is a positioning context */
 }
 
 .nav-link:hover,
 .shop-link:hover {
   color: var(--accent-color);
   transform: scale(1.05);
+}
+
+.nav-link::after {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 5px;
+  left: 50%;
+  bottom: 2rem;
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
 .nav-link:active,

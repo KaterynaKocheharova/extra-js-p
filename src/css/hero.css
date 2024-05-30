@@ -1,0 +1,17 @@
+/* NEED TO CHOOSE A DIFFERENT PIC; OPTIMIZE FOR RETINA SCREENS AND GET DIFFERENT IMAGES FOR DIFFERENT SCREEN SIZES */
+
+.hero-section {
+  padding-top: 10%;
+  background-image: url('../img/hero/background-image-not-optimized-mobile.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1000px;
+  color: var(--primary-font-color);
+}
+
+@media screen and (min-width: 760px) {
+  .hero-section {
+    background-image: url('../img/hero/background-image-not-optimized.jpg');
+  }
+}

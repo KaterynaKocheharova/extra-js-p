@@ -37,7 +37,7 @@ body {
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
   letter-spacing: 0.07em;
-  color: var(--primary-font-color);
+  color: var(--primary-color);
 }
 
 .container {
@@ -53,6 +53,13 @@ body {
 }
 
 h1 {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 50px;
+  }
 }
 
 h2 {

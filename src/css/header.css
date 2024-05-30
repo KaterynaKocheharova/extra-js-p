@@ -1,5 +1,6 @@
 .header {
   background-color: var(--primary-color);
+  color: var(--primary-font-color);
 }
 
 .nav-container {
@@ -40,7 +41,7 @@
   transform: scale(1.05);
 }
 
-.nav-link::after {
+.nav-link:hover::after {
   position: absolute;
   content: '';
   width: 5px;

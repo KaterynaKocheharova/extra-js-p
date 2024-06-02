@@ -1,3 +1,7 @@
 export const addClass = (element, newClass) => {
-  element.classList.addClass(newClass);
+  element.classList.add(newClass);
+};
+
+export const removeClass = (element, classToRemove) => {
+  element.classList.remove(classToRemove);
 };

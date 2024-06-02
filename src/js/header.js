@@ -1,4 +1,4 @@
-import { addClass } from './helpers';
+import { addClass, removeClass } from './helpers';
 
 const headerRefs = {
   navLink: document.querySelector('.nav-link'),
@@ -13,8 +13,8 @@ const headerOffset = headerRefs.header.offsetTop;
 
 window.addEventListener('scroll', function () {
   if (window.pageYOffset > headerOffset) {
-    headerRefs.header.classList.add('fixed-header');
+    addClass(headerRefs.header, 'fixed-header');
   } else {
-    headerRefs.header.classList.remove('fixed-header');
+    removeClass(headerRefs.header, 'fixed-header');
   }
 });

@@ -6,23 +6,12 @@
   width: 100%;
   background-color: var(--primary-color);
   color: var(--primary-font-color);
-  transition: all 0.3s ease;
   min-height: 50px;
 }
 
 .header.sticky-header {
   position: fixed;
   animation: slideDown 0.35s ease-out;
-}
-
-.header.sticky-header .nav-link,
-.header.sticky-header .shop-link {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.header.sticky-header .nav-link:hover::after {
-  content: unset;
 }
 
 @keyframes slideDown {
@@ -59,12 +48,12 @@
   position: relative;
   display: block;
   transition: padding 0.3s ease;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
   transition: color 250ms linear, transform 250ms linear;
-  position: relative; /* Make sure the link is a positioning context */
+  position: relative;
 }
 
 .nav-link:hover,
@@ -74,7 +63,7 @@
   color: var(--accent-color);
   transform: scale(1.05);
 }
-
+/* 
 .nav-link:hover::after {
   position: absolute;
   content: '';
@@ -95,7 +84,7 @@
   bottom: 2rem;
   background-color: var(--accent-color);
   border-radius: 50%;
-}
+} */
 
 .fa-bag-shopping {
   font-size: var(--standard-icon-size);

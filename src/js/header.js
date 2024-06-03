@@ -13,8 +13,8 @@ const headerOffset = headerRefs.header.offsetTop;
 
 window.addEventListener('scroll', function () {
   if (window.pageYOffset > headerOffset) {
-    addClass(headerRefs.header, 'fixed-header');
+    addClass(headerRefs.header, 'sticky-header');
   } else {
-    removeClass(headerRefs.header, 'fixed-header');
+    removeClass(headerRefs.header, 'sticky-header');
   }
 });

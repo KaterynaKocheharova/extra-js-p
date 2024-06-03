@@ -2,19 +2,19 @@
   font-family: 'Inter', sans-serif;
 
   /* COLOR PALETTE 1 */
-  --primary-color: #403234;
+  /* --primary-color: #403234;
   --primary-background-color: #e2c2b3;
   --primary-background-color-transparent: rgba(226, 194, 179, 0.5);
   --primary-border-color: #8c8c8c;
   --primary-font-color: #beb9b9;
-  --card-box-shadow: -5px 5px 18px 0 rgba(64, 50, 52, 0.5);
+  --card-box-shadow: -5px 5px 18px 0 rgba(64, 50, 52, 0.5); */
 
   /* COLOR PALETTE 2 */
-  /* --primary-color: #000000;
+  --primary-color: #000000;
   --primary-background-color: #beb9b9;
   --primary-font-color: #beb9b9;
   --card-box-shadow: -5px 5px 18px 0 rgba(0, 0, 0, 0.07);
-  --accent-color: #ffffff; */
+  --accent-color: #ffffff;
 
   /* BORDER RADIUS */
   --card-border-radius: 5px;

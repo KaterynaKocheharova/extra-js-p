@@ -1,5 +1,6 @@
 .hero-section {
-  padding-top: 10%;
+  padding-top: 20%;
+  padding-bottom: 20%;
   background-image: url('../img/hero/background-image-not-optimized-mobile.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -11,7 +12,6 @@
 
 @media screen and (min-width: 760px) {
   .hero-section {
-    padding-top: 5%;
     background-image: url('../img/hero/background-image-not-optimized.jpg');
   }
 }

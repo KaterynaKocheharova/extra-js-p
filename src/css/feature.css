@@ -1,0 +1,16 @@
+.feature-section {
+  background-color: var(--primary-background-color);
+}
+
+@media screen and (min-width: 600px) {
+  .feature-section .swiper-pagination,
+  .feature-section .swiper-button-prev,
+  .feature-section .swiper-button-next,
+  .feature-section .swiper-scrollbar {
+    display: none;
+  }
+}
+
+.feature-section .feature-swiper-pagination {
+  position: static;
+}

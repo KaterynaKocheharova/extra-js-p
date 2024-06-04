@@ -68,3 +68,10 @@ h2 {
 
 h3 {
 }
+
+section {
+  /* padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding); */
+  padding-top: 300px;
+  padding-bottom: 300px;
+}

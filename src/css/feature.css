@@ -9,8 +9,32 @@
   .feature-section .swiper-scrollbar {
     display: none;
   }
+
+  .feature-section .swiper-slide {
+    flex-shrink: unset;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .feature-section .swiper-wrapper,
+  .feature-section .swiper-wrapper,
+  .feature-section .swiper-wrapper,
+  .feature-section .swiper-wraper {
+    display: flex;
+  }
 }
 
 .feature-section .feature-swiper-pagination {
   position: static;
+}
+
+.bx-message {
+  color: var(--primary-color);
+}
+
+.feature-section .feature-swiper-slide {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
 }

@@ -23,7 +23,7 @@ function initializeSwiper() {
   } else {
     if (featureSwiper) {
       featureSwiper.destroy(true, true);
-      featureSwiper = undefined;
+      // featureSwiper = undefined;
     }
   }
 }

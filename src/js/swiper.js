@@ -18,11 +18,13 @@ function initializeSwiper() {
         scrollbar: {
           el: '.swiper-scrollbar',
         },
+        spaceBetween: 10,
       });
     }
   } else {
     if (featureSwiper) {
       featureSwiper.destroy(true, true);
+      featureSwiper.disable();
       // featureSwiper = undefined;
     }
   }

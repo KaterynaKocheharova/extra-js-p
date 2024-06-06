@@ -2,19 +2,19 @@
   font-family: 'Inter', sans-serif;
 
   /* COLOR PALETTE 1 */
-  /* --primary-color: #403234;
+  --primary-color: #403234;
   --primary-background-color: #e2c2b3;
   --primary-background-color-transparent: rgba(226, 194, 179, 0.5);
   --primary-border-color: #8c8c8c;
   --primary-font-color: #beb9b9;
-  --card-box-shadow: -5px 5px 18px 0 rgba(64, 50, 52, 0.5); */
+  --card-box-shadow: -5px 5px 18px 0 rgba(64, 50, 52, 0.5);
 
   /* COLOR PALETTE 2 */
-  --primary-color: #000000;
+  /* --primary-color: #000000;
   --primary-background-color: #beb9b9;
   --primary-font-color: #beb9b9;
-  --card-box-shadow: -5px 5px 18px 0 rgba(0, 0, 0, 0.07);
-  --accent-color: #ffffff;
+  --card-box-shadow: box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  --accent-color: #ffffff; */
 
   /* BORDER RADIUS */
   --card-border-radius: 5px;
@@ -72,4 +72,14 @@ h3 {
 section {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
+}
+
+p {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 500px) {
+  p {
+    font-size: 16px;
+  }
 }

@@ -48,7 +48,6 @@
 }
 
 .feature-section .feature-swiper-slide {
-  height: 300px;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;

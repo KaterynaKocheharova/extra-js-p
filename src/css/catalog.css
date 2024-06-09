@@ -1,0 +1,19 @@
+.catalog-section {
+  background-color: var(--primary-background-color);
+}
+
+.catalog-main-title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.product-item {
+  width: 300px;
+}

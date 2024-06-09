@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 const accessories = [
   {
     id: 1,
@@ -7,6 +5,7 @@ const accessories = [
     colors: ['black', 'brown', 'tan'],
     gender: 'women',
     description: 'A stylish leather bag for women.',
+    price: 120,
   },
   {
     id: 2,
@@ -14,6 +13,7 @@ const accessories = [
     colors: ['brown', 'blue', 'red'],
     gender: 'men',
     description: 'A sleek leather wallet for men.',
+    price: 45,
   },
   {
     id: 3,
@@ -21,6 +21,7 @@ const accessories = [
     colors: ['black', 'brown', 'grey'],
     gender: 'women',
     description: 'A classic leather belt for women.',
+    price: 35,
   },
   {
     id: 4,
@@ -28,6 +29,7 @@ const accessories = [
     colors: ['red', 'green', 'blue'],
     gender: 'men',
     description: 'A versatile leather bag for men.',
+    price: 110,
   },
   {
     id: 5,
@@ -35,6 +37,7 @@ const accessories = [
     colors: ['black', 'brown', 'grey'],
     gender: 'women',
     description: 'A practical leather wallet for women.',
+    price: 50,
   },
   {
     id: 6,
@@ -42,6 +45,7 @@ const accessories = [
     colors: ['black', 'brown', 'blue'],
     gender: 'men',
     description: 'A stylish leather belt for men.',
+    price: 40,
   },
   {
     id: 7,
@@ -49,6 +53,7 @@ const accessories = [
     colors: ['brown', 'tan', 'grey'],
     gender: 'women',
     description: 'A spacious leather bag for women.',
+    price: 130,
   },
   {
     id: 8,
@@ -56,6 +61,7 @@ const accessories = [
     colors: ['black', 'blue', 'tan'],
     gender: 'men',
     description: 'A durable leather wallet for men.',
+    price: 48,
   },
   {
     id: 9,
@@ -63,6 +69,7 @@ const accessories = [
     colors: ['brown', 'black', 'red'],
     gender: 'women',
     description: 'A fashionable leather belt for women.',
+    price: 38,
   },
   {
     id: 10,
@@ -70,6 +77,7 @@ const accessories = [
     colors: ['blue', 'red', 'tan'],
     gender: 'men',
     description: 'A rugged leather bag for men.',
+    price: 115,
   },
   {
     id: 11,
@@ -77,6 +85,7 @@ const accessories = [
     colors: ['brown', 'grey', 'red'],
     gender: 'women',
     description: 'A chic leather wallet for women.',
+    price: 55,
   },
   {
     id: 12,
@@ -84,6 +93,7 @@ const accessories = [
     colors: ['black', 'brown', 'green'],
     gender: 'men',
     description: 'A versatile leather belt for men.',
+    price: 42,
   },
   {
     id: 13,
@@ -91,6 +101,7 @@ const accessories = [
     colors: ['brown', 'black', 'blue'],
     gender: 'women',
     description: 'A stylish leather bag for women.',
+    price: 125,
   },
   {
     id: 14,
@@ -98,6 +109,7 @@ const accessories = [
     colors: ['black', 'blue', 'green'],
     gender: 'men',
     description: 'A functional leather wallet for men.',
+    price: 46,
   },
   {
     id: 15,
@@ -105,6 +117,7 @@ const accessories = [
     colors: ['brown', 'tan', 'blue'],
     gender: 'women',
     description: 'A trendy leather belt for women.',
+    price: 37,
   },
   {
     id: 16,
@@ -112,6 +125,7 @@ const accessories = [
     colors: ['black', 'grey', 'green'],
     gender: 'men',
     description: 'A practical leather bag for men.',
+    price: 105,
   },
   {
     id: 17,
@@ -119,6 +133,7 @@ const accessories = [
     colors: ['brown', 'blue', 'tan'],
     gender: 'women',
     description: 'A sleek leather wallet for women.',
+    price: 52,
   },
   {
     id: 18,
@@ -126,6 +141,7 @@ const accessories = [
     colors: ['black', 'brown', 'red'],
     gender: 'men',
     description: 'A durable leather belt for men.',
+    price: 39,
   },
   {
     id: 19,
@@ -133,6 +149,7 @@ const accessories = [
     colors: ['blue', 'tan', 'red'],
     gender: 'women',
     description: 'A stylish leather bag for women.',
+    price: 135,
   },
   {
     id: 20,
@@ -140,6 +157,7 @@ const accessories = [
     colors: ['black', 'grey', 'green'],
     gender: 'men',
     description: 'A functional leather wallet for men.',
+    price: 49,
   },
   {
     id: 21,
@@ -147,6 +165,7 @@ const accessories = [
     colors: ['brown', 'black', 'blue'],
     gender: 'women',
     description: 'A versatile leather belt for women.',
+    price: 36,
   },
   {
     id: 22,
@@ -154,6 +173,7 @@ const accessories = [
     colors: ['black', 'brown', 'green'],
     gender: 'men',
     description: 'A durable leather bag for men.',
+    price: 108,
   },
   {
     id: 23,
@@ -161,6 +181,7 @@ const accessories = [
     colors: ['brown', 'blue', 'tan'],
     gender: 'women',
     description: 'A sleek leather wallet for women.',
+    price: 51,
   },
   {
     id: 24,
@@ -168,6 +189,7 @@ const accessories = [
     colors: ['black', 'red', 'grey'],
     gender: 'men',
     description: 'A stylish leather belt for men.',
+    price: 40,
   },
   {
     id: 25,
@@ -175,6 +197,7 @@ const accessories = [
     colors: ['brown', 'blue', 'red'],
     gender: 'women',
     description: 'A trendy leather bag for women.',
+    price: 125,
   },
   {
     id: 26,
@@ -182,6 +205,7 @@ const accessories = [
     colors: ['black', 'blue', 'green'],
     gender: 'men',
     description: 'A functional leather wallet for men.',
+    price: 48,
   },
   {
     id: 27,
@@ -189,6 +213,7 @@ const accessories = [
     colors: ['brown', 'black', 'tan'],
     gender: 'women',
     description: 'A versatile leather belt for women.',
+    price: 38,
   },
   {
     id: 28,
@@ -196,6 +221,7 @@ const accessories = [
     colors: ['black', 'brown', 'grey'],
     gender: 'men',
     description: 'A practical leather bag for men.',
+    price: 112,
   },
   {
     id: 29,
@@ -203,6 +229,7 @@ const accessories = [
     colors: ['brown', 'blue', 'red'],
     gender: 'women',
     description: 'A chic leather wallet for women.',
+    price: 54,
   },
   {
     id: 30,
@@ -210,6 +237,7 @@ const accessories = [
     colors: ['black', 'tan', 'green'],
     gender: 'men',
     description: 'A stylish leather belt for men.',
+    price: 41,
   },
 ];
 

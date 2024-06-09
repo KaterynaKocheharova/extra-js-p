@@ -1,4 +1,4 @@
-import { getProducts } from './api/products-api';
+import { getProducts } from '../api/products-api';
 
 const productList = document.querySelector('.product-list');
 
@@ -9,14 +9,16 @@ const products = getProducts();
 console.log(productList);
 // RENDER PRODUCTS
 
-const productTemplate = ({ id, type, description, colors, gender }) => {
+const productTemplate = ({ id, type, description, colors, gender, price }) => {
   return `<li id=${id} class="product-item">
-        <a class="product-link">
+        <img src="../img/e1084e21-c4e8-4303-a203-72f4838c4cfb.jpg">
         <h3>${type}</h3>
         <p>${description}</p>
         <p>${gender}</p>
-        </a>
-    </li>`;
+        <p>${price}dollars</p>
+        <a class="product-card-shopping-cart-link" href="cart.html"> <i class="fa-solid fa-bag-shopping"></i></a>
+        <i class="fa-solid fa-heart"></i>
+        </li>`;
 };
 
 const renderProducts = products => {

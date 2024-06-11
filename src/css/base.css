@@ -3,7 +3,8 @@
 
   /* COLOR PALETTE 1 */
   --primary-color: #403234;
-  --primary-background-color: #e2c2b3;
+  /* --primary-background-color: #e2c2b3; */
+  --primary-background-color: #f5eae5;
   --accent-color: #cc5500;
   --primary-background-color-transparent: rgba(226, 194, 179, 0.5);
   --primary-border-color: #8c8c8c;
@@ -15,7 +16,9 @@
   /* --primary-color: #000000;
   --primary-background-color: #beb9b9;
   --primary-font-color: #beb9b9;
-  --card-box-shadow: box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  --card-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   --accent-color: #ffffff; */
 
   /* BORDER RADIUS */

@@ -24,6 +24,7 @@
   /* BORDER RADIUS */
   --card-border-radius: 5px;
   --input-border-radius: 30px;
+  --card-image-border-radius: 15px;
 
   /* FONT-SIZES */
   --small-font-size: 14px;
@@ -86,9 +87,4 @@ p {
   p {
     font-size: 16px;
   }
-}
-
-.card-title {
-  font-size: 25px;
-  text-transform: uppercase;
 }

@@ -11,7 +11,7 @@ console.log(productList);
 
 const productTemplate = ({ id, type, description, colors, gender, price }) => {
   return `<li id=${id} class="product-item">
-        <img src="../img/e1084e21-c4e8-4303-a203-72f4838c4cfb.jpg">
+        <img class="catalog-item-image" src="../img/e1084e21-c4e8-4303-a203-72f4838c4cfb.jpg">
         <h3 class="catalog-item-title card-title">${type}</h3>
         <p class="catalog-item-text">${description}</p>
         <p  class="catalog-item-text catalog-item-price">${price} dollars</p>

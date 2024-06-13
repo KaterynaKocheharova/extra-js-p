@@ -1,4 +1,4 @@
-const accessories = [
+const products = [
   {
     id: 1,
     type: 'bag',
@@ -241,6 +241,8 @@ const accessories = [
   },
 ];
 
-export const getProducts = () => {
-  return accessories;
+export const getProducts = (per_page, currentPage) => {
+  const startIndex = (currentPage - 1) * per_page;
+  const endIndex = startIndex + per_page;
+  return products.slice(startIndex, endIndex);
 };

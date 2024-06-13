@@ -51,3 +51,13 @@
   font-size: var(--standard-icon-size);
   color: var(--accent-color);
 }
+
+.catalog-loader,
+.load-more-btn {
+  display: none;
+}
+
+.loader.visible,
+.load-more-btn.visible {
+  display: block;
+}

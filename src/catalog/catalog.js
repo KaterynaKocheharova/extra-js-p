@@ -1,13 +1,59 @@
 import { getProducts } from '../api/products-api';
 
+// ===================================== CATALOG REFS
 const productList = document.querySelector('.product-list');
+const loadMoreBtn = document.querySelector('.load-more-btn');
+const catalogLoader = document.querySelector('.catalog-loader');
 
-// GET PRODUCTS
+// ====================================== VARIABLES
+let currentPage = 1;
+const per_page = 4;
+let maxPageNum = 8;
+// ===================================== LOADING PRODUCTS FUNCTIONS
 
-const products = getProducts();
+const onCatalogLoad = async () => {
+  catalogLoader.classList.add('visible');
+  try {
+    const products = await getProducts(per_page, currentPage);
+    renderProducts(products);
+    checkLoadMoreStat();
+  } catch (error) {
+    alert(error);
+  } finally {
+    catalogLoader.classList.remove('visible');
+  }
+};
 
-console.log(productList);
-// RENDER PRODUCTS
+onCatalogLoad();
+
+const checkLoadMoreStat = () => {
+  if (currentPage <= maxPageNum) {
+    loadMoreBtn.classList.add('visible');
+    console.log('still visible');
+  } else {
+    loadMoreBtn.classList.remove('visible');
+    console.log('Більше немає продуктів');
+    //make disabled
+  }
+};
+
+const loadMore = async () => {
+  catalogLoader.classList.add('visible');
+  currentPage += 1;
+  try {
+    const products = await getProducts(per_page, currentPage);
+    renderProducts(products);
+    checkLoadMoreStat();
+  } catch (error) {
+    alert(error);
+  } finally {
+    catalogLoader.classList.remove('visible');
+  }
+};
+
+loadMoreBtn.addEventListener('click', loadMore);
+
+// RENDERRING FUNCTION - SEPARATE FILE
 
 const productTemplate = ({ id, type, description, colors, gender, price }) => {
   return `<li id=${id} class="product-item">
@@ -27,5 +73,3 @@ const renderProducts = products => {
   const productListMarkup = products.map(productTemplate).join('');
   productList.insertAdjacentHTML('beforeend', productListMarkup);
 };
-
-renderProducts(products);
